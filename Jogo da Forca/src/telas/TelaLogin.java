@@ -96,7 +96,7 @@ public class TelaLogin extends TelaDefault {
 					}
 
 				} catch (UsuarioNaoEncontradoException e1) {
-					JOptionPane.showMessageDialog(tela, "ERRO! Usu·rio n„o cadastrado.");
+					JOptionPane.showMessageDialog(tela, "ERRO! Usu√°rio n√£o cadastrado.");
 				}
 			}
 		}
@@ -117,7 +117,7 @@ public class TelaLogin extends TelaDefault {
 				
 				getPersistenciaXML().salvarCentralDoJogo(getCentralDoJogo());	
 				
-				JOptionPane.showMessageDialog(tela, "Agora, sua senha est· igual ao seu nome.");
+				JOptionPane.showMessageDialog(tela, "Agora, sua senha est√° igual ao seu nome.");
 				
 			} catch (UsuarioNaoEncontradoException e1) {
 				
@@ -128,7 +128,7 @@ public class TelaLogin extends TelaDefault {
 	
 	
 	public TelaLogin() {
-		super("Login e Cadastro de Usu·rio", 430, 500);
+		super("Login e Cadastro de Usu√°rio", 430, 500);
 		
 		addLabels();
 		addBotoes();
@@ -159,7 +159,7 @@ public class TelaLogin extends TelaDefault {
 		JLabel lblSenha = gerarLabel("Senha", 80, 265, 50, 30, JLabel.LEFT, font);
 		add(lblSenha);
 		
-		String strInstrucao = "Cadastre-se Para Jogar ou FaÁa Login";
+		String strInstrucao = "Cadastre-se Para Jogar ou Fa√ßa Login";
 		
 		if(getCentralDoJogo().getUsuarios().isEmpty())
 			strInstrucao = "Cadastre-se Como Administrador";
@@ -188,7 +188,7 @@ public class TelaLogin extends TelaDefault {
 		if (user instanceof Administrador) {
 			new TelaAdministrador();
 		} else if(getCentralDoJogo().getPalavras().isEmpty()){
-			JOptionPane.showMessageDialog(tela, "N„o h· palavras cadastradas. Entre em contato com o administrador do jogo.");
+			JOptionPane.showMessageDialog(tela, "N√£o h√° palavras cadastradas. Entre em contato com o administrador do jogo.");
 			new TelaLogin();
 		} else {
 			new TelaJogoDaForca(user);						

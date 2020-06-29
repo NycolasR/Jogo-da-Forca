@@ -118,7 +118,7 @@ public class TelaDefault extends JFrame {
 			if(isUserTable) {
 				
 				if(i == 0) {
-					modelo.addColumn("Pontuação Total");	
+					modelo.addColumn("PontuaÃ§Ã£o Total");	
 				}
 				linha = new Object[3];
 				

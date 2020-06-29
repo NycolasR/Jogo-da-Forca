@@ -34,7 +34,7 @@ public class TelaAddPalavras extends TelaDefault {
 				
 			} else if(tfdPalavra.getText().length() > 13) {
 				
-				JOptionPane.showMessageDialog(tela, "O limite de carateres estabelecido é 13. Escolha uma palavra menor.");
+				JOptionPane.showMessageDialog(tela, "O limite de carateres estabelecido Ã© 13. Escolha uma palavra menor.");
 				
 			} else {
 

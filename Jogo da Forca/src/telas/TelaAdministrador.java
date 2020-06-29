@@ -33,7 +33,7 @@ public class TelaAdministrador extends TelaDefault {
 	
 	
 	public TelaAdministrador() {
-		super("Administração", 500, 515);
+		super("AdministraÃ§Ã£o", 500, 515);
 		
 		addTables();
 		addBotoes();

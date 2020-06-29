@@ -42,7 +42,7 @@ public class TelaJogoDaForca extends TelaDefault {
 				
 			} else if(tfdLetra.getText().length() > 1) {
 				
-				JOptionPane.showMessageDialog(tela, "Você só pode informar uma letra de cada vez!");
+				JOptionPane.showMessageDialog(tela, "VocÃª sÃ³ pode informar uma letra de cada vez!");
 				
 			} else {
 				
@@ -75,7 +75,7 @@ public class TelaJogoDaForca extends TelaDefault {
 					repaint();
 					
 					if(contadorDeErros == lblPartesDoCorpo.length) {
-						JOptionPane.showMessageDialog(tela, "Você perdeu! Tente novamente quando quiser.");
+						JOptionPane.showMessageDialog(tela, "VocÃª perdeu! Tente novamente quando quiser.");
 						reinicarJogo();
 					}
 					
@@ -87,7 +87,7 @@ public class TelaJogoDaForca extends TelaDefault {
 					if(isOver()) {
 						usuario.pontuar();
 						getPersistenciaXML().salvarCentralDoJogo(getCentralDoJogo());
-						JOptionPane.showMessageDialog(tela, "Parabéns! Você venceu o Jogo da Forca!");
+						JOptionPane.showMessageDialog(tela, "ParabÃ©ns! VocÃª venceu o Jogo da Forca!");
 						reinicarJogo();
 					}
 				}
